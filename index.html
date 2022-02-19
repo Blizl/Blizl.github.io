@@ -21,50 +21,10 @@
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="js/underscore-min.js"></script>
-    <script type="text/javascript" src="js/gooss.js"></script>
-    <script type="text/javascript">
-      // TODO: Change this to the URL of your spreadsheet.
-      var url = "https://docs.google.com/spreadsheets/d/12blRc5V9OTJkIzHijpiBVXZ-sxKPZVk86LqImvItY60/edit?usp=sharing";
-  
-      // DOMContentLoaded is not available IE < 9. Use a different load method
-      // if you wish to target lower IE versions.
-      document.addEventListener("DOMContentLoaded", function() {
-        // TODO: Change "sheet_name" to the name you want to use
-        gooss.data({ sheet_name: {url: url, index: 0} }, function(err, data) {
-          if (err) {
-            document.getElementById("loading").innerHTML = "Error: " + err;
-            return;
-          }
-          gooss.template(data);
-          document.getElementById("loading").style.display = "none";
-        });
-      }, false);
-    </script>
-
 
   </head>
 
   <body>
-    <p> test test</p>
-    <h1>Gooss quickstart</h1>
-
-    <div id="loading"><p>Loading...</p></div>
-  
-    <!-- TODO: Replace the contents of this script tag with your template -->
-    <script type="text/html">
-      <p><%- sheet_name.length %> rows in the worksheet</p>
-    </script>
-
-
-    <form>
-      First name:<br>
-      <input type="text" name="firstname"><br>
-      Last name:<br>
-      <input type="text" name="lastname">
-      <input type="submit" value="Submit">
-    </form>
     <form name="gform" id="gform" enctype="text/plain" 
     action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
       First name:<br>
