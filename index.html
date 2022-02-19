@@ -28,20 +28,6 @@
 </head>
 
 <body>
-  <p>Test form</p>
-
-
-
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-  <script src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript">var submitted = false;</script>
-  <script type="text/javascript">
-    $('#gform').on('submit', function (e) {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Your submission has been processed...');
-    });
-  </script>
-
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -76,54 +62,55 @@
       <div class="intro-message">
         <h1>Victor Liang</h1>
         <h3>Hey! I'm a senior at Northeastern currently looking for a full time job as a software developer.</h3>
-        <form name="gform" id="gform" enctype="text/plain"
-        action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
-        target="hidden_iframe" onsubmit="submitted=true;">
-        First name:<br>
-        <input type="text" name="entry.97899463" id="entry.97899463"><br>
-        Last name:<br>
-        <input type="text" name="entry.424048761" id="entry.424048761">
-        <input type="submit" value="Submit">
-      </form>
 
-
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
-      target="hidden_iframe" onsubmit="submitted=true;"">
-        <div class="form-group">
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
+          target="hidden_iframe" onsubmit="submitted=true;"">
+        <div class=" form-group">
           <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" name="entry.97899463"id="entry.97899463" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">I am a...</label>
-          <select class="form-control" name="entry.424048761" id="entry.424048761">
-            <option>Licenser</option>
-            <option>Artist</option>
-          </select>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-        <hr class="intro-divider">
-        <ul class="list-inline intro-social-buttons">
-          <li class="list-inline-item">
-            <a href="#" class="btn btn-secondary btn-lg">
-              <!-- <i class="fa fa-twitter fa-fw"></i> -->
-              <span class="network-name">Resume</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/VicLiang621" class="btn btn-secondary btn-lg">
-              <!-- <i class="fa fa-github fa-fw"></i> -->
-              <span class="network-name">Github</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
-              <!-- <i class="fa fa-linkedin fa-fw"></i> -->
-              <span class="network-name">LinkedIn</span>
-            </a>
-          </li>
-        </ul>
+          <input type="email" class="form-control" name="entry.97899463" id="entry.97899463"
+            placeholder="name@example.com">
       </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">I am a...</label>
+        <select class="form-control" name="entry.424048761" id="entry.424048761">
+          <option>Licenser</option>
+          <option>Artist</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript">var submitted = false;</script>
+      <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your submission has been processed...');
+        })</script>
+
+      <hr class="intro-divider">
+      <ul class="list-inline intro-social-buttons">
+        <li class="list-inline-item">
+          <a href="#" class="btn btn-secondary btn-lg">
+            <!-- <i class="fa fa-twitter fa-fw"></i> -->
+            <span class="network-name">Resume</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/VicLiang621" class="btn btn-secondary btn-lg">
+            <!-- <i class="fa fa-github fa-fw"></i> -->
+            <span class="network-name">Github</span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
+            <!-- <i class="fa fa-linkedin fa-fw"></i> -->
+            <span class="network-name">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     </div>
   </header>
 
@@ -174,7 +161,7 @@
     <!-- /.container -->
 
   </section>
-  <!-- Page Content -->
+  <!--Page Content-- >
   <section class="content-section-a" id="projects">
 
     <div class="container">
@@ -225,7 +212,7 @@
   </section>
   <!-- /.content-section-b -->
 
-  <section class="content-section-a">
+  < section class="content-section-a">
 
     <div class="container">
 
@@ -255,80 +242,80 @@
     </div>
     <!-- /.container -->
 
-  </section>
-  <!-- /.content-section-a -->
+    </section>
+    <!-- /.content-section-a -->
 
-  <aside class="banner">
+    < aside class="banner">
 
-    <div class="container" id="contact">
+      <div class="container" id="contact">
 
-      <div class="row">
-        <div class="col-lg-6 my-auto">
-          <h2>Contact me!</h2>
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <h2>Contact me!</h2>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-secondary btn-lg">
+                  <!-- <i class="fa fa-twitter fa-fw"></i> -->
+                  <span class="network-name">Resume</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://www.github.com/VicLiang621" class="btn btn-secondary btn-lg">
+                  <!-- <i class="fa fa-github fa-fw"></i> -->
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
+                  <!-- <i class="fa fa-linkedin fa-fw"></i> -->
+                  <span class="network-name">Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-6 my-auto">
-          <ul class="list-inline banner-social-buttons">
-            <li class="list-inline-item">
-              <a href="#" class="btn btn-secondary btn-lg">
-                <!-- <i class="fa fa-twitter fa-fw"></i> -->
-                <span class="network-name">Resume</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="http://www.github.com/VicLiang621" class="btn btn-secondary btn-lg">
-                <!-- <i class="fa fa-github fa-fw"></i> -->
-                <span class="network-name">Github</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
-                <!-- <i class="fa fa-linkedin fa-fw"></i> -->
-                <span class="network-name">Linkedin</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </div>
+      <!-- /.container -->
 
-    </div>
-    <!-- /.container -->
+      </aside>
+      < !-- /.banner -->
 
-  </aside>
-  <!-- /.banner -->
+        < !--Footer -->
+          <footer>
+            <div class="container">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#">About</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#coop">Co-ops</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#projects">Projects</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+              <p class="copyright text-muted small">Copyright &copy; Victor Liang 2017. All Rights Reserved</p>
+            </div>
+          </footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="#">Home</a>
-        </li>
-        <li class="footer-menu-divider list-inline-item">&sdot;</li>
-        <li class="list-inline-item">
-          <a href="#">About</a>
-        </li>
-        <li class="footer-menu-divider list-inline-item">&sdot;</li>
-        <li class="list-inline-item">
-          <a href="#coop">Co-ops</a>
-        </li>
-        <li class="footer-menu-divider list-inline-item">&sdot;</li>
-        <li class="list-inline-item">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="footer-menu-divider list-inline-item">&sdot;</li>
-        <li class="list-inline-item">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <p class="copyright text-muted small">Copyright &copy; Victor Liang 2017. All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="script.js"></script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+          <!--Bootstrap core JavaScript-- >
+          <script src="script.js"></script>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/popper/popper.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 
