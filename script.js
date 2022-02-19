@@ -1,4 +1,1 @@
-$("#coop_button").click(function(){
-            $('html, body').animate({ scrollTop: $('#coop').offset().top }, 'slow');
-           
-})
+console.log("this is js coming from script.js");
