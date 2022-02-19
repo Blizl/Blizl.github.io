@@ -1,5 +1,6 @@
 var gooss = (function() {
     "use strict";
+    console.log("inside the gooss function");
   
     // Process the response from the Google Docs query into a nice JS object.
     //
