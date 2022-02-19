@@ -30,15 +30,7 @@
 <body>
   <p>Test form</p>
 
-  <form name="gform" id="gform" enctype="text/plain"
-    action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
-    target="hidden_iframe" onsubmit="submitted=true;">
-    First name:<br>
-    <input type="text" name="entry.97899463" id="entry.97899463"><br>
-    Last name:<br>
-    <input type="text" name="entry.424048761" id="entry.424048761">
-    <input type="submit" value="Submit">
-  </form>
+
 
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   <script src="assets/js/jquery.min.js"></script>
@@ -84,6 +76,32 @@
       <div class="intro-message">
         <h1>Victor Liang</h1>
         <h3>Hey! I'm a senior at Northeastern currently looking for a full time job as a software developer.</h3>
+        <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
+        target="hidden_iframe" onsubmit="submitted=true;">
+        First name:<br>
+        <input type="text" name="entry.97899463" id="entry.97899463"><br>
+        Last name:<br>
+        <input type="text" name="entry.424048761" id="entry.424048761">
+        <input type="submit" value="Submit">
+      </form>
+
+
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
+      target="hidden_iframe" onsubmit="submitted=true;"">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" name="entry.97899463"id="entry.97899463" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">I am a...</label>
+          <select class="form-control" name="entry.424048761" id="entry.424048761">
+            <option>Licenser</option>
+            <option>Artist</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
         <hr class="intro-divider">
         <ul class="list-inline intro-social-buttons">
           <li class="list-inline-item">
