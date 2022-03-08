@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Victor Liang</title>
+  <title>Mint songs as NFTs on Layer 2 Ethereum and license them to creators</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,95 +29,86 @@
 
 <body>
 
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item" id="coop_button">
-            <a class="nav-link" href="#coop" onclick="scrollTo()">Co-ops</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+    <a href="#">
+      <img class="img-fluid" src="img/ComposeBackground.png" width="250px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Platform</a>
+        </li>
+        <li class="nav-item" id="roadmap_button">
+          <a class="nav-link" href="#roadmap" onclick="scrollTo()" style="color: white;">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#whyus" style="color: white;">Why Us?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq" style="color: white;">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="button">
+            <a class="nav-link-custom" href="#" style="color: white;">Sign up</a>
+          </button>
+        </li>
+
+      </ul>
+    </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header class="intro-header">
     <div class="container">
-      <div class="intro-message">
-        <h1>Victor Liang</h1>
-        <h3>Hey! I'm a senior at Northeastern currently looking for a full time job as a software developer.</h3>
+      <div class="row">
+        <div class=" intro-message intro-box col-sm-6">
+          <div class="col">
+            <h3 style="margin-top: 10px;">Mint songs as NFTs on Layer 2 Ethereum and license them to creators</h3>
+            <p style="margin-top: 10px;">Enter your email address for our early access program and newsletter</p>
 
-        <form name="gform" id="gform"
-          action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
-          target="hidden_iframe" onsubmit="submitted=true;"">
-        <div class=" form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" name="entry.97899463" id="entry.97899463"
-            placeholder="name@example.com">
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">I am a...</label>
-        <select class="form-control" name="entry.424048761" id="entry.424048761">
-          <option>Licenser</option>
-          <option>Artist</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-      </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            <div class="d-flex flex-fill row">
+              <form name="gform" id="gform"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScq3VTIfJIR4vmkfEnaCzbYlwgNBEuZT0PNhDbxUeirB0iXlA/formResponse?"
+                target="hidden_iframe" onsubmit="submitted=true;">
+                <label for="exampleFormControlInput1"></label>
+                <input class="custom-search row-lg-8" type="email" class="form-control" name="entry.97899463"
+                  id="entry.97899463" placeholder="Enter your email address here">
+              </form>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+              <div class="form-group">
+                <button type="submit" class="button" style="color: white; margin-top: 30px;">Sign Up</button>
+              </div>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript">var submitted = false;</script>
-      <script type="text/javascript">
-        $('#gform').on('submit', function (e) {
-          $('#gform *').fadeOut(2000);
-          $('#gform').prepend('Your submission has been processed...');
-        })</script>
+            </div>
+          </div>
+          <div>
 
-      <hr class="intro-divider">
-      <ul class="list-inline intro-social-buttons">
-        <li class="list-inline-item">
-          <a href="#" class="btn btn-secondary btn-lg">
-            <!-- <i class="fa fa-twitter fa-fw"></i> -->
-            <span class="network-name">Resume</span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://github.com/VicLiang621" class="btn btn-secondary btn-lg">
-            <!-- <i class="fa fa-github fa-fw"></i> -->
-            <span class="network-name">Github</span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
-            <!-- <i class="fa fa-linkedin fa-fw"></i> -->
-            <span class="network-name">LinkedIn</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript">var submitted = false;</script>
+            <script type="text/javascript">
+              $('#gform').on('submit', function (e) {
+                $('#gform *').fadeOut(2000);
+                $('#gform').prepend('Your submission has been processed...');
+              })</script>
+
+          </div>
   </header>
 
-  <section class="content-section-a" id="coop">
+  <section class="platform-header" id="platform">
 
-    <div class="container">
+    <!-- <img class="img-fluid" src="img/overview page background.png" style="background-size:contain"> -->
+    <!-- <p> Some test</p> -->
+
+
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-5 ml-auto">
           <center>
@@ -133,190 +124,302 @@
         <div class="col-lg-5 mr-auto">
           <img class="img-fluid" src="img/infinio.png" alt="" style="margin-top:80px;">
         </div>
-      </div>
+      </div> -->
 
-    </div>
     <!-- /.container -->
-  </section>
+    </div>
 
-  <section class="content-section-b">
+    <!-- <section class="content-section-b"> -->
+
 
     <div class="container">
+      <div style="font-size:30px; padding-top: 150px;">Overview</div>
 
-      <div class="row">
-        <div class="col-lg-5 mr-auto order-lg-2">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Full Stack Developer Co-op</h2>
-          <p class="lead"> I worked at Scout from July 2017-December 2017 working mainly on their stack written in
-            React/Redux as well as a Python Flask
-            back end where I helped port their old pages which were just HTML templates into React pages. I also wrote
-            an automation framework as well as api for the testing team.
-        </div>
-        <div class="col-lg-5 ml-auto order-lg-1">
-          <img class="img-fluid" src="img/scout.jpeg" style="margin-top:-10px;">
-        </div>
+
+      <div>
+        <img src="img/overview_with_frame.png" width="1200px" style="margin-left:-50px">
+      </div>
+    </div>
+    <div class="d-flex justify-content-center" style="margin-left: 100px;">
+      <div style="margin-left: -10px; padding-right: 10%;">
+
+        <p>NFT Engine</p>
+
+      </div>
+      <div style="padding-right: 10%;">
+        <p>License Hub</p>
+      </div>
+      <div style="padding-right: 10%;">
+        <p>Marketplace</p>
+      </div>
+      <div style="padding-right: 8%;">
+        <p>Creator Connect</p>
+        <p style="margin-top: -15px; font-size: 10px;">(Coming soon)</p>
+      </div>
+      <div style="padding-right: 5%">
+        <p>Music Incubator</p>
+        <p style="margin-top: -15px; font-size: 10px;">(Coming soon)</p>
       </div>
 
     </div>
-    <!-- /.container -->
 
   </section>
-  <!--Page Content-- >
-  <section class="content-section-a" id="projects">
+  <section class="roadmap-section" id="roadmap">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 ml-auto">
-          <center>
-            <h1>Projects</h1>
-          </center>
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Computer Systems Research<br>Virtualized Flash Storage</h2>
-          <p class="lead">I currently do research at the
-            <a target="_blank" href="http://nucsrl.coe.neu.edu/">Computer Systems Research Lab.</a>
-            I am currently creating a spark framework to analyze the I/O of virtualized flash storage systems to
-            hopefully develop new caching algorithms
-          </p>
-        </div>
-        <div class="col-lg-5 mr-auto">
-          <img class="img-fluid" src="img/spark.png" alt="" style="margin-top:70px;">
-        </div>
-      </div>
+      <div style="font-size:30px; padding-top: 100px;">Roadmap</div>
+      <div style="font-size:20px; margin-top: 10px; margin-bottom: 10px;">ComposeNFT Roadmap for 2022 and 2023</div>
+      <img src="img/Timelime_vector.png" width="50px"
+        style="margin-bottom: 200px; position: absolute; margin-left: -20px;">
+      <div id="text-elements" class="col">
 
-    </div>
-    <!-- /.container -->
-  </section>
+        <!-- ComposeNFT Beta -->
+        <div class="row justify-content-center" id="beta-info" style="margin-top: 150px;">
+          <img src="img/beta_icon.png" style="margin-top: -50px;" width="100px" height="100px">
+          <div class="col-4" style="text-align: left; padding-right:70px">
+            <p style="font-size: 20px;">Compose NFT Early Access Beta</p>
+            <div class="w-100" style="font-size: 10px;">We are inviting a Select group of Artist to participate in our
+              Early Access Beta. These Artist will test out our NFT Engine, License Controlloer & Marketplace.
+              Interested in Joining? More Information here.</div>
 
-  <section class="content-section-b">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 mr-auto order-lg-2">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Feeder-Web Scraper<br>for Foodler, GrubHub, Eat24</h2>
-          <p class="lead"> This web scraper was written in Python where the main goal was to see the price differences
-            between these different platforms
-            The data was stored into a MongoDB database.
-        </div>
-        <div class="col-lg-5 ml-auto order-lg-1">
-          <img class="img-fluid" src="img/web-crawlers.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </section>
-  <!-- /.content-section-b -->
-
-  < section class="content-section-a">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 ml-auto">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Languages and<br>Frameworks/Databases</h2>
-          <p class="lead"> Python, Javascript/Typescript, C/C++, Java, ReactJS, Django, Flask, MongoDB, MySQL
-        </div>
-        <div class="col-lg-5 mr-auto ">
-          <!-- <img class="img-fluid" src="img/phones.png" alt=""> -->
-          <!-- <i class="devicon-cplusplus-plain"></i> -->
-          <i class="devicon-cplusplus-plain colored" style="font-size: 5em"></i>
-          <i class="devicon-python-plain-wordmark colored" style="font-size: 5em"></i>
-          <i class="devicon-react-original-wordmark colored" style="font-size: 5em"></i>
-          <i class="devicon-mongodb-plain-wordmark colored" style="font-size: 5em"></i>
-          <i class="devicon-javascript-plain" style="font-size: 5em"></i>
-          <i class="devicon-java-plain-wordmark colored" style="font-size: 5em"></i>
-          <i class="devicon-bootstrap-plain-wordmark" style="font-size: 5em"></i>
-          <i class="devicon-django-plain colored" style="font-size: 5em"></i>
-          <i class="devicon-mysql-plain-wordmark colored" style="font-size: 5em"></i>
-          <i class="devicon-nodejs-plain colored" style="font-size: 5em"></i>
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-    </section>
-    <!-- /.content-section-a -->
-
-    < aside class="banner">
-
-      <div class="container" id="contact">
-
-        <div class="row">
-          <div class="col-lg-6 my-auto">
-            <h2>Contact me!</h2>
           </div>
-          <div class="col-lg-6 my-auto">
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="#" class="btn btn-secondary btn-lg">
-                  <!-- <i class="fa fa-twitter fa-fw"></i> -->
-                  <span class="network-name">Resume</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="http://www.github.com/VicLiang621" class="btn btn-secondary btn-lg">
-                  <!-- <i class="fa fa-github fa-fw"></i> -->
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/victor-liang-372213a4/" class="btn btn-secondary btn-lg">
-                  <!-- <i class="fa fa-linkedin fa-fw"></i> -->
-                  <span class="network-name">Linkedin</span>
-                </a>
-              </li>
-            </ul>
+          <div class="col-4" style="text-align: left; font-size:20px; color: #02BBF5; padding-right: 150px;">April 2022
           </div>
+
         </div>
 
-      </div>
-      <!-- /.container -->
-
-      </aside>
-      < !-- /.banner -->
-
-        < !--Footer -->
-          <footer>
-            <div class="container">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="#">Home</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#">About</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#coop">Co-ops</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#projects">Projects</a>
-                </li>
-                <li class="footer-menu-divider list-inline-item">&sdot;</li>
-                <li class="list-inline-item">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-              <p class="copyright text-muted small">Copyright &copy; Victor Liang 2017. All Rights Reserved</p>
+        <!-- General Public -->
+        <div class="row justify-content-center" id="general-public-info" style="margin-top: 150px;">
+          <div class="col-4" style="text-align: right; color: #02BBF5; font-size: 20px;">June 2022</div>
+          <div class="row-4 justify-content-center" style="text-align: left; margin-left:150px">
+            <div class="row">
+              <p style="font-size: 20px;">ComposeNFT General Public Release</p>
+              <img src="img/general_public_icon.png" style="margin-top: -40px;" width="100px" height="100px">
             </div>
-          </footer>
+            <div class="w-100" style="font-size: 10px;">Our Platform will be made available to General public</div>
 
-          <!--Bootstrap core JavaScript-- >
-          <script src="script.js"></script>
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/popper/popper.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+          </div>
+        </div>
+
+
+        <!-- Creator connect -->
+        <div class="row justify-content-center" id="general-public-info" style="margin-top: 160px;">
+          <div class="col-4" style="text-align: left; padding-right:30px;">
+            <div class="row justify-content-center">
+              <img src="img/creator_connect_icon.png" style="margin-top: -30px;" width="100px" height="65px">
+              <p style="font-size: 20px;">Creator Connect</p>
+            </div>
+            <div class="col" style="font-size: 10px; text-align: left;">We are inviting a Select group of Artist to
+              participate in our
+              Early Access Beta. These Artist will test out our NFT Engine, License Controlloer & Marketplace.
+              Interested in Joining? More Information here.</div>
+
+          </div>
+          <div class="col-4" style="text-align: left; color: #02BBF5;  font-size:20px; padding-left:50px">August 2022
+          </div>
+        </div>
+
+        <!-- ComposeNFT Studio -->
+        <div class="row justify-content-center" id="composenft-studio-info"
+          style="margin-top: 110px; padding-bottom: 400px; ">
+          <div class="col-4" style="text-align: right;  font-size:20px; color: #02BBF5;">2023</div>
+          <div class="col-4" style="text-align: left; padding-left: 100px;">
+            <p style="font-size: 20px;">ComposeNFT Studio</p>
+            <div class="" style="font-size: 10px;">
+              ComposeNFT Studios will serve as Music incubation spaces for our
+              members. Artist will have access to ComposeNFT Studios in select
+              cities across the United States.
+
+              <br></br>
+
+
+              <div>
+                Our Vision of ComposeNFT Studio
+                <ul>
+                  <li>
+                    Best-in-Class Recording Booths & Equipments.
+                  </li>
+                  <li>
+                    Stages Sets & Live Stream Equipment for Artist to go Perform
+                    Live Streamed Concerts for fans around the World.
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <img src="img/composenft_studio.png" style="margin-top: -50px;" width="100px" height="100px">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why-us" id="whyus">
+
+    <div class="container">
+      <div class="col" style="font-size: 30px; padding-top: 100px;">Why Us?</div>
+      <div class="col" style="font-size: 15px; padding-bottom: 50px;">
+        ComposeNFT is the first Music NFT platform built on Etherueum’s Layer 2 Zk-Rollup technology, powerered by
+        ZkSync. This ensures that artists can mint their songs as NFTs with low gas fees.
+        <br></br>
+
+        ComposeNFT gives artists the ability to own their master copy as an NFT and sell/ license it out to others
+        legally.
+
+      </div>
+      <img src="img/why_us_chart.png" style="max-width: 100%;
+      max-height: 100vh;
+      margin: auto;">
+
+
+  </section>
+  <section class="faq-page" id="faq">
+    <div class="container" style="font-size:30px; padding-top: 150px; "">
+
+      <div style=" padding-bottom: 100px;">FAQs</div>
+    <div id="question_1" class="collapsible-group">
+      <button type="button" class="collapsible">How do I find my funds on Polygon?</button>
+
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat.</p>
+      </div>
+    </div>
+    <div id="question_2" class="collapsible-group">
+      <button type="button" class="collapsible">Where can I find NFT sales?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat.</p>
+      </div>
+    </div>
+    <div id="question_3" class="collapsible-group">
+      <button type="button" class="collapsible">How can I cancel all my item listings and offers on Ethereum?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat.</p>
+      </div>
+    </div>
+    <div id="question_4" class="collapsible-group">
+      <button type="button" class="collapsible">Smart Contract Upgrade: What does a signature request look
+        like?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat.</p>
+      </div>
+    </div>
+    <div id="question_5" class="collapsible-group" style="padding-bottom: 200px;">
+      <button type="button" class="collapsible">How can I export my NFT sales on OpenSea for taxes?</button>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea
+          commodo consequat.</p>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      // Javascript code for collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      console.log("coll length is: ", coll.length)
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </section>
+
+
+  <Footer style="color: white;">
+    <footer>
+      <a href="#">
+        <img class="img-fluid" src="img/ComposeBackground.png" width="400px" style=" display: block;
+        margin-left: auto;
+        margin-right: auto">
+      </a>
+      <div class="container">
+        <div class="d-flex flex-row justify-content-between" style="margin-top: 100px;">
+          <div id="left-footer" class="w-25 p-2">
+            <!-- <p style="font-size: 20px">About Us</p> -->
+            <div class="text-left p-2" style="font-size:20px">About Us</div>
+            <div class="text-left p-2">
+              In publishing and graphic design, Lorem ipsum is a
+              placeholder text commonly used to demonstrate the
+              visual form of a document or a typeface without
+              relying on meaningful content
+
+            </div>
+
+          </div>
+          <div id="center-footer" class="p-2" style="text-align: center;">
+            <p style="font-size: 20px"> Connect with Us</p>
+
+            <div class="d-flex justify-content-center">
+                <div class="col list-inline-item">
+                  <a href="#">
+                    <img class="img-fluid" src="img/instagram_icon.png" width="30px"
+                      style="background-size:contain; margin-right: 25px;">
+                  </a>
+                </div>
+                <div class="col list-inline-item">
+                  <a href="#coop">
+                    <img class="img-fluid" src="img/twitter_icon.png" width="30px"
+                      style="background-size:contain; margin-right: 25px;">
+                  </a>
+                </div>
+                <div class="col list-inline-item">
+                  <a href="#projects">
+                    <img class="img-fluid" src="img/telegram_icon.png" width="30px"
+                      style="background-size:contain; margin-right: 25px;">
+  
+                  </a>
+                </div>
+                <div class="col list-inline-item" >
+                  <a href="#contact">
+                    <img class="img-fluid" src="img/discord_icon.png" width="30px"
+                      style="background-size:contain; margin-right: 25px;">
+  
+                  </a>
+                </div>
+
+            </div>
+
+          </div>
+          <div id="right-footer" class="w-25 p-2">
+            <div class="text-left" style="font-size:20px">Subscribe</div>
+            <div class="text-left" style="margin-top:10px">Subscribe for more information</div>
+          </div>
+
+        </div>
+
+
+      </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 
